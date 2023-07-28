@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Posted validation form</title>
+	 <link rel="stylesheet" type="text/css" href="styleSheet.css">
+	 <script type="text/javascript">
+	  function validation()
+	  {
+        if (document.form.fName.value == "" || !isNaN(document.form.fName.value))
+		   {
+            alert("Enter First name which contain alphabet");
+            document.form.fName.focus();
+            return false;
+           }
+		   
+        if (document.form.mName.value == "" || !isNaN(document.form.mName.value)) 
+		   {
+            alert("Enter Last name which contain alphabet");
+            document.form.mName.focus();
+            return false;
+           }
+		   
+		if (document.form.sName.value == "" || !isNaN(document.form.sName.value)) 
+		   {
+            alert("Enter Last name which contain alphabet");
+            document.form.sName.focus();
+            return false;
+           }
+		
+        var emailid = document.form.email.value;
+            posat = emailid.indexOf("@");
+            posdot = emailid.lastIndexOf(".");
+			
+        if(posat < 1 || posdot - posat < 2) 
+		  {
+           alert("invalid email");
+           document.form.email.focus();
+           return false;
+          }
+		  
+        if(document.form.pWord.value.length < 10) 
+		  {
+           alert("Enter password with atleast 10 character!");
+           document.form.pWord.focus();
+           return false;
+          }
+    }
+	</script>
+  </head>
+</html>
+
+<body class="image">
+    <nav>
+      <input type="checkbox" id="check">
+	  <label for="check" class="checkbtn">
+	    <i class="fas fa-bars"></i>
+      <label class="logo">whoIsTwalibu?</label>
+	  <ul>
+	     <li><a class="active" href="website.html">home<a></li>
+	     <li><a href="about.html">about me<a></li>
+	     <li><a href="registration.html">register<a></li>
+	     <li><a href="login.html">courses<a></li>
+	     <li><a href="CV.html">CV<a></li>
+	     <li><a href="contact.html">contact menu<a></li>
+	  </ul>
+   </nav>  
+     <section></section>
+   
+   <h2 style="color:#FFFFFF" align="center">register yourself below in order to be accessed to view other Twalibu's informations.</h2><br>
+   
+  <center>
+  <form action="post2db.php" method="POST" name="form" onsubmit ="return validation();">
+  <table style="background-color:#708090;">
+    <tr style="color:#FFFFFF"> 
+	    <th><h1>registration form</h1></th>
+   </tr>	 
+	
+   <tr>
+     <td><label>PERSONAL INFOMATIONS:</label><br></td>
+   </tr>	
+   <tr>
+     <td><label>First name:</label><br></td>
+	 <td><input type="text" name="fName" id="fName"><br></td>
+   </tr>
+   
+   <tr>
+     <td><label>Middle name:</label><br></td>
+	 <td><input type="text" name="mName" id="mName"><br></td>
+   </tr>
+   
+   <tr>
+     <td><label>Surname:</label><br></td>
+	 <td><input type="text" name="sName" id="sName"><br></td>
+   </tr>
+   
+   <tr>
+     <td><label>Username:</label><br></td>
+	 <td><input type="text" name="uName" id="uName"><br></td>
+   </tr>
+   
+   <tr>
+     <td><label>Password:</label><br></td>
+	 <td><input type="password" name="pWord" id="pWord"><br></td>
+   </tr>
+   
+   <tr>
+     <td><label>CV:</label><br><br></td>
+	 <td><input type="file" name="CV" id="CV"><br><br></td>
+   </tr>
+   
+   <tr>
+     <td><label>CONTACTS:</label><br></td>
+   </tr>
+   <tr>
+     <td><label>Email address:</label><br></td>
+	 <td><input type="email" name="email" id="email"><br></td>
+   </tr>
+   <tr>
+	 <td><label>Mobile number:</label><br><br></td>
+	 <td><input type="number" name="number" id="number"><br><br></td>
+   </tr>
+	
+	<tr >
+	 <td><label>SOCIAL MEDIA ACCOUNTS:</label><br></td>
+	</tr>
+	<tr>
+	 <td><label>Facebook:</label><br></td>
+	 <td><input type="text" name="fb" id="fb"><br></td>
+	</tr>
+	<tr>
+	 <td><label>Twitter:</label><br></td>
+	 <td><input type="text" name="twt" id="twt"><br></td>
+	</tr>
+	<tr>
+	 <td><label>Instagram:</label><br><br></td>
+	 <td><input type="text" name="ing" id="ing"><br><br></td>
+    </tr>
+
+	<tr>
+     <td><label>SUBMIT:</label><br><br></td>
+	 <td><input type="submit" value="submit" id="submit"><br><br></td>
+   </tr>  
+
+    <tr>
+     <td><label>RESET:</label><br><br></td>
+	 <td><input type="reset" value="reset" id="reset"><br><br></td>
+   </tr> 
+   
+   </tr>
+   </table>
+  </form><br><br>
+  </center>
+ <footer>
+     <div>
+          <a href="">
+            <img src="location.png" alt="locationIcon" />
+            <span>
+              University of Dar Es Salaam,Tanzania
+            </span>
+          </a>
+		  
+          <a href="">
+            <img src="call.png" alt="callIcon" />
+            <span>
+              +255 783 239 834
+            </span>
+          </a>
+		  
+          <a href="mailto:pembetwalibu18@gmail.com">
+            <img src="mail.png" alt="mailIcon" />
+            <span>
+              pembetwalibu18@gmail.com
+            </span>
+          </a>
+        </div>
+  <a><i>2021 All Right Reserved by<br>&copy;TWALIBU PEMBE<i></a>
+ </footer> 
+</body>
+
+</html>

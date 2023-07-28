@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course</title>
+	<link rel="stylesheet" type="text/css" href="styleSheet.css">
+</head>
+<body class="image">
+   <nav>
+      <input type="checkbox" id="check">
+	  <label for="check" class="checkbtn">
+	    <i class="fas fa-bars"></i>
+      <label class="logo">whoIsTwalibu?</label>
+	  <ul>
+	     <li><a class="active" href="website.html">home<a></li>
+	     <li><a href="about.html">about me<a></li>
+	     <li><a href="registration.html">register<a></li>
+	     <li><a href="course.html">courses<a></li>
+	     <li><a href="CV.html">CV<a></li>
+	     <li><a href="contact.html">contact menu<a></li>
+	  </ul>
+   </nav>  
+     <section></section>
+	 
+	<h1>Course Attended in University<h1> 
+	<table border="1" style="background-color:#d3d3d3;">
+	   <tr>
+	      <td style="background-color:#c0c0c0;">Semister 1</td>
+	   </tr>
+	   <tr style="background-color:#c0c0c0;">
+	      <th>CourseCode</th>
+	      <th>CourseName</th>
+	      <th>OfferedDepartment</th>
+	   </tr>
+	   <tr>
+	      <td>AC 100</td>
+	      <td>Principles of Accounting I</td>
+	      <td>UDBS</td>
+	   </tr>
+	   <tr>
+	      <td>CS 174</td>
+	      <td>Programming in C</td>
+	      <td>COICT</td>
+	   </tr>
+	   <tr>
+	      <td>DS 112</td>
+	      <td>Development Perspectives I</td>
+	      <td>IDS</td>
+	   </tr>
+	   <tr>
+	      <td>FN 100</td>
+	      <td>Principles of MicroEconomics analysis</td>
+	      <td>UDBS</td>
+	   </tr>
+	   <tr>
+	      <td>MK 100</td>
+	      <td>Introduction To Business</td>
+	      <td>UDBS</td>
+	   </tr>
+	   <tr>
+	      <td>ST 113</td>
+	      <td>Basic Statistics</td>
+	      <td>UBDS</td>
+	   </tr>
+	   <tr>
+	      <td style="background-color:#c0c0c0;">Semister 2</td>
+	   </tr>
+	   <tr>
+	      <td>CS 173</td>
+	      <td>Business Computer Communication</td>
+	      <td>COICT</td>
+	   </tr>
+	   <tr>
+	      <td>DS 113</td>
+	      <td>Development Perspectives II</td>
+	      <td>IDS</td>
+	   </tr>
+	   <tr>
+	      <td>FN 101</td>
+	      <td>Principles of MacroEconomics II</td>
+	      <td>FN</td>
+	   </tr>
+	   <tr>
+	      <td>GM 100</td>
+	      <td>Principles and Practice of Management</td>
+	      <td>UDBS</td>
+	   </tr>
+	   <tr>
+	      <td>IS 171</td>
+	      <td>Introduction to Computer Networks</td>
+	      <td>COICT</td>
+	   </tr>
+	   <tr>
+	      <td>IS 181</td>
+	      <td>Web Programming</td>
+	      <td>COICT</td>
+	   </tr>
+	   <tr>
+	      <td>ST 114</td>
+	      <td>Probability Theory I</td>
+	      <td>UDBS</td>
+	   </tr>   
+	</table><br>
+	
+<form action="course.php" method="POST">
+    <label for="course"> course</label>
+    <select name="course" >
+	    <option >courseName</option>
+        <option >Principles of Accounting I</option>
+        <option >Programming in C</option>
+        <option >Development Perspectives I</option>
+        <option >Principles of MicroEconomics analysis</option>
+        <option >Introduction To Business</option>
+        <option >Basic Statistics</option>
+        <option >Business Computer Communication</option>
+        <option >Development Perspectives II</option>
+        <option >Principles of MacroEconomics II</option>
+        <option >Principles and Practice of Management</option>
+        <option >Introduction to Computer Networks</option>
+        <option >Web Programming</option>
+        <option >Probability Theory I</option>
+    </select><br>
+
+    <label style="font-size:normal; color:000000;" for="coursecode"> course code</label>
+    <select name="coursecode">
+	    <option >courseCode</option>
+        <option >AC 100</option>
+        <option >CS 173</option>
+        <option >DS 112</option>
+        <option >FN 100</option>
+        <option >MK 100</option>
+        <option >ST 113</option>
+        <option >IS 171</option>
+        <option >DS 113</option>
+        <option >FN 101</option>
+        <option >GM 100</option>
+        <option >CS 174</option>
+        <option >ST 114</option>
+    </select><br>
+	
+	<label style="font-size:normal; color:000000;" for="decription"> course description</label>
+	<textarea type="text" name="description" id="description">
+	</textarea><br>
+	
+	<label for="department">Department Offered</label>
+    <select name="department">
+	    <option >department</option>
+        <option >IDS</option>
+        <option >COICT</option>
+        <option >CONASS</option>
+        <option >UDBS</option>
+        <option >COHU</option>
+    </select><br>
+
+    
+    <label for="grade"> Grade</label>
+    <select name ="grade">
+        <option >grade</option>
+        <option >A </option>
+        <option >B+</option>
+        <option >B</option>
+        <option >C</option>
+        <option >D</option>
+    </select><br>
+	
+	<label for="year"> Academic Year</label>
+    <select name ="year" >
+	    <option >year</option>
+        <option >2020</option>
+        <option >2021</option>
+        <option >2022</option>
+        <option >2023</option>
+    </select><br>
+
+    <label>Submit</label>
+    <input type="submit" value="submit"><br><br> 
+</form>
+   
+    
+</body>
+</html>
